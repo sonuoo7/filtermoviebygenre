@@ -1,0 +1,98 @@
+/* MOVIE list css */
+table {
+  border-collapse: collapse;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+th {
+  background-color: #d8d4d4;
+  border: 1px solid #ddd;
+  color: #333;
+  font-weight: 800;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:hover td {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 0.8em;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+}
+
+/* Genre css */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.genre-filter {
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 970px;
+  background-color: #d8d4d4;
+}
+
+.genre-filter p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  border-radius: 0.5rem;
+  background-color: #c5bebe;
+  color: #130e0e;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #1565c0;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .genre-filter {
+    max-width: 100%;
+    margin: 20px 10px;
+  }
+
+  button {
+    margin: 0.3rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 14px;
+    border-radius: 0.3rem;
+  }
+}
